@@ -4,14 +4,14 @@ The code repository for _Semi-supervised classification of engine parts_.
 Unfortunately, no data can be made available due to confidentiality, meaning code will not execute in its current state.
 
 ### Entrypoints
-If you're only interested in our implementation of FixMatch, you can see the [train pipeline](src\component_classifier\train_loop_builder.py).
+If you're only interested in our implementation of FixMatch, you can see the [train pipeline](src/component_classifier/train_loop_builder.py).
 
-[One-time scripts](src\component_classifier\one_time_scripts) perform preprocessing steps such as downloading images, creating static image embeddings, splitting data etc.
+[One-time scripts](src/component_classifier/one_time_scripts) perform preprocessing steps such as downloading images, creating static image embeddings, splitting data etc.
 
-[main.py](src\component_classifier\main.py) is configured to open a browser with each of the plots from the paper. The underlying runs are executed via [dataset_study.py](src\component_classifier\dataset_study.py) and 
-[ablation_study.py](src\component_classifier\ablation_study.py).
+[main.py](src/component_classifier/main.py) is configured to open a browser with each of the plots from the paper. The underlying runs are executed via [dataset_study.py](src/component_classifier/dataset_study.py) and 
+[ablation_study.py](src/component_classifier/ablation_study.py).
 
-The one-class classification results are displayed using [occ_study.py](src\component_classifier\occ_study.py).
+The one-class classification results are displayed using [occ_study.py](src/component_classifier/occ_study.py).
 
 ### Abstract
 This paper tries to re-implement the semi-supervised method provided by FixMatch for it to be used to
